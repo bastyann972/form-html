@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etape 1 - Commandez votre Happy DAY</title>
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+</head>
+
+<body>
+    <header class="sticky">
+        <a href="/" class="logo">
+            <img src="assets/images/logo.png" alt="">
+            Happy DAY</a>
+        <a href="themes.html" class="button">Les thèmes</a>
+        <a href="order-step1.html" class="button">Commander un
+            anniversaire</a>
+    </header>
+    <main>
+        <h1>Parlez nous de vous</h1>
+
+        <!-- mettre le code du formulaire de la première étape ici -->
+
+        <form action="order-step2.html" method="get">
+
+            <fieldset>
+                <legend>Civilité : </legend>
+                <input type="radio" name="honorific-prefix" value="mme" id="honorific-prefix-mme">
+                <label for="honorific-prefix-mme">Mme</label>
+                <input type="radio" name="honorific-prefix" value="m" id="honorific-prefix-m">
+                <label for="honorific-prefix-m">M</label>
+                <input type="radio" name="honorific-prefix" value="other" id="honorific-prefix-other">
+                <label for="honorific-prefix-other">Autre</label>
+            </fieldset>
+
+            <br><br>
+
+            <label for="family-name">Votre nom</label>
+            <input type="text" id="family-name" name="family-name" autocomplete="family-name">
+
+            <label for="given-name">Votre prénom</label>
+            <input type="text" id="given-name" name="given-name" autocomplete="given-name">
+
+            <br><br>
+
+            <label for="email">
+                Votre adresse mail</label>
+            <input type="email" name="email" id="email" autocomplete="email">
+
+            <br><br>
+
+            <label for="bday">
+                Votre date d'anniversaire</label>
+            <input type="date" name="bday" id="bday" autocomplete="bday">
+
+            <br><br>
+
+            <label for="color">Votre couleur préférée</label>
+            <input type="color" name="color" id="color" value="#ff00ff">
+
+            <fieldset>
+                <legend>Vos parfums préférés</legend>
+
+                <label for="chocolate">Chocolat</label>
+                <input type="checkbox" name="chocolate" id="chocolate" checked>
+
+                <label for="flavor-vanilla">Vanille
+                    <input type="checkbox" name="flavor-vanilla" id="flavor-vanilla">
+                </label>
+
+                <label for="flavor-pistachio">Pistache
+                    <input type="checkbox" name="flavor-pistachio" id="flavor-pistachio">
+                </label>
+                <label for="flavor-coffee">Café
+                    <input type="checkbox" name="flavor-coffee" id="flavor-coffee">
+                </label>
+                <br><br>
+                <label for="flavor-strawberry">Fraise
+                    <input type="checkbox" name="flavor-strawberry" id="flavor-strawberry">
+                </label>
+                <label for="flavor-banana">Banane
+                    <input type="checkbox" name="flavor-banana" id="flavor-banana">
+                </label>
+                <label for="flavor-apricot">Abricot
+                    <input type="checkbox" name="flavor-apricot" id="flavor-apricot">
+                </label>
+                <label for="flavor-raspberry">Framboise
+                    <input type="checkbox" name="flavor-raspberry" id="flavor-raspberry">
+                </label>
+
+            </fieldset>
+
+            <button>étape suivante &rArr;</button>
+
+        </form>
+        <h1>Décrivez nous votre Happy DAY</h1>
+
+        <!-- mettre le code du formulaire de la seconde étape ici -->
+
+        <form action="order-step-end.html" method="get">
+
+            <label for="hd-theme">Quel thème choisissez-vous ?</label>
+            <select name="hd-theme" id="hd-theme">
+                <option value="1">Le cirque de Noisette</option>
+                <option>La Choco-jungle</option>
+                <option>Paillettes et cornes à foison</option>
+                <option>Sous l'océan</option>
+                <option>Oui-oui au pays des jouets</option>
+            </select>
+
+            <br><br>
+
+            <label for="hd-diners">Combien aurez-vous d'invités ?</label>
+            <input type="number" id="hd-diners" name="hd-diners" min="0" max="200">
+
+            <br><br>
+
+            <label for="hd-date">Quelle sera la date et l'heure de votre Happy
+                DAY ?</label>
+            <input type="datetime-local" id="hd-date" name="hd-date">
+
+            <br><br>
+
+            <fieldset>
+                <legend>Souhaitez-vous vivre votre Happy DAY</legend>
+
+                <label for="hd-home">
+                    <input type="radio" name="hd-where" value="home" id="hd-home">
+                    chez vous</label>
+                <label for="hd-hd">
+                    <input type="radio" name="hd-where" value="not-home" id="hd-hd">
+                    chez nous</label>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>Quelles options voulez-vous en plus ?</legend>
+                <label for="option_1">
+                    <input type="checkbox" name="disguise" id="option_1">lot de déguisements pour tous les
+                    invités</label>
+                <br>
+                <label for="option_2">
+                    <input type="checkbox" name="24H" id="option_2">24h d'animations non-stop</label>
+                <br>
+                <label for="option_3">
+                    <input type="checkbox" name="gift-for-all" id="option_3">cadeaux personnalisés pour chaque
+                    invité</label>
+                <br>
+                <label for="option_4">
+                    <input type="checkbox" name="social-network-album" id="option_4">album souvenir diffusé en direct sur vos
+                    réseaux sociaux</label>
+            </fieldset>
+
+            <br><br>
+
+            <label for="comments">D'autres idées à ajouter ?</label>
+            <textarea name="comments" id="comments"></textarea>
+
+            <button>Finaliser ma commande</button>
+        </form>
+        <h2>Nos tarifs légers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de convives</th>
+                    <th>Tarif par personnes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 à 9</td>
+                    <td>120 &euro;</td>
+                </tr>
+                <tr>
+                    <td>10 à 19</td>
+                    <td>115 &euro;</td>
+                </tr>
+                <tr>
+                    <td>19 et plus</td>
+                    <td>90 &euro;</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <a href="">Nous contacter</a> |
+        <a href="">A propos de Happy DAY</a> |
+        <a href="">Nos mentions légales</a>
+        - Happy DAY &copy; 2023
+    </footer>
+</body>
+
+</html>
